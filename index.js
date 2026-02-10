@@ -36,3 +36,33 @@ input.addEventListener("keypress",   function(event){
 
     }
 })
+
+
+
+
+
+
+let glow = document.getElementById("glow");
+
+let mouseX = 0, mouseY = 0;
+let currentX = 0, currentY = 0;
+
+document.addEventListener("mousemove", (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+function animate() {
+  currentX += (mouseX - currentX) * 0.09;
+  currentY += (mouseY - currentY) * 0.09;
+
+  glow.style.left = currentX + "px";
+  glow.style.top = currentY + "px";
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+
+

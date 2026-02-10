@@ -5,6 +5,7 @@
 }
 body{
      background-color:black;
+     overflow: hidden;
     
 }
 .cssbuttons-io {
@@ -111,7 +112,7 @@ color:white;
 h1{
  
 }
-/* From Uiverse.io by Madflows */ 
+
 .button {
   position: relative;
   overflow: hidden;
@@ -171,4 +172,23 @@ h2{
   font-size: medium;
   margin-bottom:7%;
   color:white;
+}
+
+/* الكرسرالملون المتحرك */
+.glow {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  pointer-events: none;
+ background: radial-gradient(
+  circle,
+  rgba(140, 0, 255, 0.45),
+  rgba(0, 255, 255, 0.45),
+  transparent 70%
+);
+  filter: blur(40px);
+  transform: translate(-50%, -50%);
+  transition: background 0.3s ease;
+  z-index: -1;
 }
