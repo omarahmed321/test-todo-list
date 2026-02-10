@@ -109,7 +109,7 @@ color:white;
   margin-top:10%;
 }
 h1{
-  margin-bottom:10%;
+ 
 }
 /* From Uiverse.io by Madflows */ 
 .button {
@@ -166,4 +166,9 @@ h1{
   margin-top: 2%;
 }
 
-
+h2{
+  line-height: 2rem;
+  font-size: medium;
+  margin-bottom:7%;
+  color:white;
+}
